@@ -8,5 +8,5 @@ def create_student(db: Session , data : ClassCreate):
     db.refresh(student)
     return student
 def get_student(db: Session):
-    return db.query(Student).all()
+    return db.query(Student)()
 
